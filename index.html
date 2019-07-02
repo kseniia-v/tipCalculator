@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href=style.css></link>
+    <script defer src="calculate.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div data-component="calculator">
+      <form data-selector="form">
+        <div id=bill>
+          <label>Bill</label>
+          <span class="symbol">&#36;</span>
+          <input data-selector="bill" type="number" autocomplete="off" value="100">
+        </div>
+        <div id=tip>
+          <label>Tip</label>
+          <input data-selector="perc" type="number" autocomplete="off" value="7">
+          <span class="symbol">&#37;</span>
+        </div>
+        <div id="split">
+          <label>Split</label>
+          <input data-selector="ifsplit" type="checkbox" autocomplete="off">
+        </div>
+        <div id="btn">
+          <input data-selector="calculate" type="button" value="Calculate">
+        </div>
+      </form>
+
+
+    </div>
+  </body>
+</html>
